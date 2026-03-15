@@ -1,0 +1,19 @@
+{
+  "consensus_threshold": 0.75,
+  "actions": {
+    "log": { "severity": "info", "notify": false },
+    "warn": { "severity": "warning", "notify": true },
+    "alert": { "severity": "critical", "notify": true, "sound": true }
+  },
+  "frame_sizes": {
+    "113": { "meaning": "Standard verified frame", "priority": "normal", "color": "green" },
+    "58": { "meaning": "Minimal frame (header only)", "priority": "low", "color": "blue" },
+    "other": { "meaning": "Anomaly: unexpected size", "priority": "high", "color": "orange" }
+  },
+  "guard_weights": {
+    "Lean4": 1.5,
+    "Scheme": 1.2,
+    "Forth": 1.0,
+    "Julia": 1.0
+  }
+}
